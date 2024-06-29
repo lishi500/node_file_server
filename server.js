@@ -10,6 +10,7 @@ const socketPort = 4000; // Socket 服务器端口
 
 // 设置静态文件目录
 app.use('/static', serveStatic(path.join(__dirname, 'static')));
+console.log('zou ni');
 
 // 创建 TCP 服务器
 const server = net.createServer((socket) => {
