@@ -20,7 +20,7 @@ const server = net.createServer((socket) => {
     const flag = data.toString().trim();
     console.log(`收到数据: ${flag}`);
     // 将数据追加到 flag 文件
-    fs.appendFile('flag', `${flag}\n`, (err) => {
+    fs.appendFile('flag.txt', `${flag}\n`, (err) => {
       if (err) {
         console.error('写入文件时出错:', err);
       } else {
