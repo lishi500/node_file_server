@@ -28,6 +28,7 @@ app.post('/submit_flag', (req, res) => {
       res.status(200).send('flag 已收到');
     }
   });
+  res.send('flag 已收到' + flag);
 });
 
 // 启动 HTTP 服务器
